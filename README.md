@@ -1,5 +1,5 @@
 # Summary
-A simple, dynamic and powerful to-do-list for pretty much anything made with express, node.js, html, css, mongodb and heroku.
+A simple, dynamic and powerful to-do-list for all of your needs. Made with express, node.js, html, css, mongodb and heroku.
 
 ## Links to GitHub Repository (Main Branch)
 GitHub Project Repository: https://github.com/naveen1994rai/your-to-do-list
