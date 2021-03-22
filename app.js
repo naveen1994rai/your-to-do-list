@@ -27,6 +27,7 @@ if (port == null || port == "") {
 let error_message;
 let defaultItemsArray = _addDefaultItems();
 
+_initializeDB();
 
 function _initializeDB() {
     console.log("Creating a default topic(Home) with default items.");
@@ -136,8 +137,6 @@ app.post('/delete', function (req, res) {
 app.listen(port, function () {
     console.log("Server is up and running on port " + port);
 });
-
-_initializeDB();
 
 function _checkForHomeItems() {
     toDoListTopics.findOne({ name: 'Home' }, function (err, doc) {
