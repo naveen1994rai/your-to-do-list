@@ -12,9 +12,9 @@ To start using the application go to the above link and add items of your choice
 
 To delete an item, just check the box and it will be removed from the list.
 
-To create a new list, just replace the route parameter with the topic of your choice. For example, to have a groceries list, you may invoke this url https://blooming-springs-19411.herokuapp.com/*Groceries*.
+To create a new list, just replace the route parameter with the topic of your choice. For example, to have a groceries list, you may invoke this url https://blooming-springs-19411.herokuapp.com/Groceries.
 
-The route parameter is capitalized, so https://blooming-springs-19411.herokuapp.com/*groceries* would work as well.
+The route parameter is capitalized, so https://blooming-springs-19411.herokuapp.com/groceries would work as well.
 
 ### To run locally
 1. Clone the repo using :
