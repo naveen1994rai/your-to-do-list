@@ -7,7 +7,7 @@ let   app           = express();
 
 //Specify the databse server address and the database we want to connect to.
 //A new database will be created if it doesn't exist.
-const url = 'mongodb+srv://admin_naveen:naveen123@cluster0.aav2u.mongodb.net/toDoListDB';
+const url = process.env.DATABASE_URI;
 
 //Connect to the DB.
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
