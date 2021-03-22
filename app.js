@@ -19,7 +19,7 @@ const listTopicSchema       = new mongoose.Schema({ name: String, items: [toDoLi
 const toDoListTopics = new mongoose.model('Topic', listTopicSchema);
 
 //Server specific configs.
-const port = process.env.PORT;
+let port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
 }
