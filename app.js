@@ -16,7 +16,13 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const toDoListItemSchema    = new mongoose.Schema({ name: String });
 const toDoListItems         = new mongoose.model('Item', toDoListItemSchema);
 const listTopicSchema       = new mongoose.Schema({ name: String, items: [toDoListItemSchema]});
-const toDoListTopics        = new mongoose.model('Topic', listTopicSchema);
+const toDoListTopics = new mongoose.model('Topic', listTopicSchema);
+
+//Server specific configs.
+const port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
 
 let error_message;
 let defaultItemsArray = _addDefaultItems();
@@ -126,8 +132,9 @@ app.post('/delete', function (req, res) {
     res.redirect('/' + topicToDeleteFrom);
 })
 
-app.listen(process.env.PORT || 3000, function () {
-    console.log("Server is up and running on port 3000 !!");
+
+app.listen(port, function () {
+    console.log("Server is up and running on port " + port);
 });
 
 _initializeDB();
