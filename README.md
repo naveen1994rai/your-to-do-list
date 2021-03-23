@@ -37,5 +37,13 @@ The route parameter is *capitalized*, so https://blooming-springs-19411.herokuap
 5. Run the application :
     `$ nodemon app.js`
 
-6. Access localhost:3000 in your browser.
+6. Access at http://localhost:3000 in your browser.
+
+## Built With
+   * Express
+   * node.js
+   * html
+   * css
+   * mongodb
+   * heroku.
 
