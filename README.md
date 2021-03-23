@@ -17,10 +17,12 @@ To *create* a new list, just replace the route parameter with the topic of your 
 The route parameter is *capitalized*, so https://blooming-springs-19411.herokuapp.com/groceries would work as well.
 
 ### To run locally
-1. Clone the repo using :
-   `$ git clone https://github.com/naveen1994rai/your-to-do-list.git`
-                            or
-   `$ git clone git@github.com:naveen1994rai/your-to-do-list.git`
+1. Clone the repo 
+   1. Using https:
+      `$ git clone https://github.com/naveen1994rai/your-to-do-list.git`
+   
+   2. Using SSH:
+      `$ git clone git@github.com:naveen1994rai/your-to-do-list.git`
    
 2. Install mongodb locally and spin up the server with :
     `$ mongod`
